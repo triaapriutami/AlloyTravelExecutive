@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gambar1" />
+
+        <TextView
+            android:id="@+id/tujuan"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="TUJUAN"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageview1" />
+
+        <TextView
+            android:id="@+id/toyota1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shuttel1"
+            android:layout_alignStart="@+id/tujuan"
+            android:text="TOYOTA"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shuttel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/idr1"
+            android:layout_alignStart="@+id/idr1"
+            android:text="Shuttel"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/idr1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/jam1"
+            android:layout_alignStart="@+id/tujuan"
+            android:layout_marginBottom="11dp"
+            android:text="Harga : IDR 80.000"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jam1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/idr1"
+            android:layout_marginBottom="8dp"
+            android:text="04.00"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>

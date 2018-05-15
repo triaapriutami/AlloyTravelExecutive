@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobile.skripsi.alloytravelexecutive.LihatJadwalActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/judul1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lihat jadwal"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ka1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kota asal"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="85dp"
+            android:entries="@array/Asal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kota tujuan"
+            android:textSize="20sp"
+            android:id="@+id/kt1"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="85dp"
+            android:entries="@array/Tujuan"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tk1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tanggal keberangkatan"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:ems="10"
+            android:text="pilih tanggal"
+            android:inputType="date"
+            android:layout_marginStart="248dp"
+            android:layout_alignBottom="@+id/tk1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jumlah penumpang"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+
+            android:onClick="increment"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/quantity_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="0"
+            android:textAllCaps="false"
+            android:textColor="#212121"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="44dp"
+            android:onClick="decrement"
+            android:text="-"
+
+            android:layout_height="44dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cari"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="120dp"
+        android:text="cari tiket" />
+
+</LinearLayout>

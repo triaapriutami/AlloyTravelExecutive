@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobile.skripsi.alloytravelexecutive.KatalogActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gambar1" />
+
+        <TextView
+            android:id="@+id/toyota1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imageview1"
+            android:text="TOYOTA"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shuttel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/idr1"
+            android:layout_alignStart="@+id/idr1"
+            android:text="Shuttel"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/idr1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageview1"
+            android:layout_alignStart="@+id/toyota1"
+            android:text="Harga : IDR 80.000"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jam1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idr1"
+            android:layout_below="@+id/idr1"
+            android:text="04.00"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gambar2" />
+
+        <TextView
+            android:id="@+id/toyota2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOYOTA"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageview2"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shuttel2"
+            android:text="Shuttel"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_above="@+id/idr2"
+            android:layout_alignStart="@+id/idr2" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/idr2"
+            android:text="Harga : IDR 80.000"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/imageview2"
+            android:layout_alignStart="@+id/toyota2" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/jam2"
+            android:text="05.00"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_below="@+id/idr2"
+            android:layout_alignStart="@+id/idr2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/imageview3"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gambar3" />
+
+        <TextView
+            android:id="@+id/toyota3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOYOTA"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageview3"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shuttel3"
+            android:text="Shuttel"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_above="@+id/idr3"
+            android:layout_alignStart="@+id/idr3" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/idr3"
+            android:text="Harga : IDR 80.000"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/imageview3"
+            android:layout_alignStart="@+id/toyota3" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/jam3"
+            android:text="06.00"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_below="@+id/idr3"
+            android:layout_alignStart="@+id/idr3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/imageview4"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gambar4" />
+
+        <TextView
+            android:id="@+id/toyota4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOYOTA"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageview4"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shuttel4"
+            android:text="Shuttel"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_above="@+id/idr4"
+            android:layout_alignStart="@+id/idr4" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/idr4"
+            android:text="Harga : IDR 80.000"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/imageview4"
+            android:layout_alignStart="@+id/toyota4" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/jam4"
+            android:text="07.00"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_below="@+id/idr4"
+            android:layout_alignStart="@+id/idr4" />
+    </RelativeLayout>
+
+</LinearLayout>

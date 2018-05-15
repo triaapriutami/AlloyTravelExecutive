@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="mobile.skripsi.alloytravelexecutive.PesanTiket2Activity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/pergi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="pergi"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/pergi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="........."
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/hi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Harga IDR"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="........."
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/total2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="........."
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/batas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-----------------------------"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/informasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informasi kontak yang dapat dihubungin" />
+
+                <TextView
+                    android:id="@+id/informasi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/informasi"
+                    android:text="mohon mengisi data diri sesuai dengan nomor identitas, karena akan di tunjukan pada saat check-in" />
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/editText2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="nama"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nama"
+                    android:layout_alignBottom="@+id/nama"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/tel"
+                    android:inputType="text"
+                    android:text="nama sesui dengan kartu identitas"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="12dp"
+                    android:text="no.telepon"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tel"
+                    android:layout_alignBottom="@+id/tel"
+                    android:layout_alignStart="@+id/editText"
+                    android:inputType="number"
+                    android:text="no.telepon"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/batas2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-----------------------------"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Data Penumpang"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/dp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="data penumpang 1"
+                android:textSize="12sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="data penumpang 2"
+                android:id="@+id/dp2"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

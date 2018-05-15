@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Alloy Travel Executive</string>
+
+    <string-array name="Tujuan">
+        <item>Yogyakarta</item>
+        <item>Solo</item>
+        <item>Semarang</item>
+        <item>Tegal</item>
+        <item>Kelet</item>
+        <item>Jepara</item>
+    </string-array>
+
+    <string-array name="Asal">
+        <item>Yogyakarta</item>
+        <item>Solo</item>
+        <item>Semarang</item>
+        <item>Tegal</item>
+        <item>Kelet</item>
+        <item>Jepara</item>
+    </string-array>
+</resources>
