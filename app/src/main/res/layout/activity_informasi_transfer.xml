@@ -13,22 +13,25 @@
         android:layout_height="wrap_content"
         android:text="Data Pemesanan Tiket"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/garis"
         android:text="---------------------"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:textColor="@android:color/black"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/kata"
-        android:text="          Anda telah selesai melakukan pemesanan tiket. Silahkan melakukan pembayaran Rp.xxxx ke nomor rekening xxxxxxxxxxxxxxxx.
+        android:text="          Anda telah selesai melakukan pemesanan tiket. Silahkan melakukan pembayaran Rp.xxxx ke nomor rekening 060-044-2121.
  Anda memiliki waktu 1 hari untuk melakukan pembayaran jika dalam 1 hari anda tidak melakukan pembayaran maka pemesanan secara otomatis akan hilang.
-    Terimakasih telah menggunakan layanan kami. PT.Alloy Travel Executive."/>
+    Terimakasih telah menggunakan layanan kami. PT.Alloy Travel Executive."
+        android:textColor="@android:color/black"/>
 
     <Button
         android:id="@+id/kontran"

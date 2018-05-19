@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="180dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,12 +20,13 @@
             android:id="@+id/tujuan"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/imageview1"
             android:text="TUJUAN"
             android:textAllCaps="false"
-            android:textSize="20sp"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageview1" />
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/toyota1"
@@ -34,6 +36,7 @@
             android:layout_alignStart="@+id/tujuan"
             android:text="TOYOTA"
             android:textAllCaps="false"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -44,6 +47,7 @@
             android:layout_alignStart="@+id/idr1"
             android:text="Shuttel"
             android:textAllCaps="false"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -55,6 +59,7 @@
             android:layout_marginBottom="11dp"
             android:text="Harga : IDR 80.000"
             android:textAllCaps="false"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -66,6 +71,7 @@
             android:layout_marginBottom="8dp"
             android:text="04.00"
             android:textAllCaps="false"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
     </RelativeLayout>
 </LinearLayout>

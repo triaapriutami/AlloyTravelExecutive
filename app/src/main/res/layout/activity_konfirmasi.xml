@@ -7,214 +7,241 @@
     tools:context="mobile.skripsi.alloytravelexecutive.KonfirmasiActivity"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="50dp">
-
-        <TextView
-            android:id="@+id/no.Rek"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nomor Rekening:"
-            android:textSize="20sp"
-            android:layout_alignBaseline="@+id/number"
-            android:layout_alignBottom="@+id/number"
-            android:layout_alignParentStart="true" />
-
-        <EditText
-            android:id="@+id/number"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:text="nomor rekening anda"
-            android:textSize="12sp"
-            android:layout_marginStart="163dp"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/name1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nama                   :"
-            android:textSize="20sp"
-            android:layout_alignBaseline="@+id/name2"
-            android:layout_alignBottom="@+id/name2"
-            android:layout_alignParentStart="true" />
-
-        <EditText
-            android:id="@+id/name2"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:text="isi nama anda"
-            android:textSize="12sp"
-            android:layout_marginStart="176dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="50dp">
-
-        <TextView
-            android:id="@+id/tyhd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Total yang harus dibayar:"
-            android:textSize="20sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:id="@+id/tyhd2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="----------"
-            android:layout_marginStart="260dp"
-            android:layout_alignBottom="@+id/tyhd"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="60dp">
-
-        <TextView
-            android:id="@+id/jumtran"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jumlah Transfer:"
-            android:textSize="20sp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true" />
-
-        <EditText
-            android:id="@+id/jumtran2"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:text="isi nominal yang ditransfer"
-            android:textSize="12sp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="170dp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="60dp">
-
-        <TextView
-            android:id="@+id/naba"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nama Bank         :"
-            android:textSize="20sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="8dp" />
-
-        <EditText
-            android:id="@+id/naba2"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:text="nama Bank anda"
-            android:textSize="12sp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="167dp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="30dp">
-
-        <TextView
-            android:id="@+id/bp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Batas pembayaran:"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/bp2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="------"
-            android:layout_marginStart="195dp"
-            android:layout_alignBottom="@+id/bp"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/garis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="-----------------------------" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp">
-
-        <ImageView
-            android:id="@+id/logo1"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/bca" />
-
-        <TextView
-            android:id="@+id/BT1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="060-044-2121"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/BT2" />
-
-        <TextView
-            android:id="@+id/BT2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/BT1"
-            android:layout_marginEnd="10dp"
-            android:text="atas nama: Ariyo"
-            android:textAllCaps="false"
-            android:textSize="20sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/upload"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:text="uplouad" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
 
-        <Button
-            android:id="@+id/konfir"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="200dp"
-            android:text="konfirmasi" />
+                <TextView
+                    android:id="@+id/no.Rek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Rekening:"
+                    android:textSize="20sp"
+                    android:layout_alignBaseline="@+id/number"
+                    android:layout_alignBottom="@+id/number"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/black"/>
 
-    </RelativeLayout>
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="nomor rekening anda"
+                    android:textSize="12sp"
+                    android:layout_marginStart="163dp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama                   :"
+                    android:textSize="20sp"
+                    android:layout_alignBaseline="@+id/name2"
+                    android:layout_alignBottom="@+id/name2"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/name2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="isi nama anda"
+                    android:textSize="12sp"
+                    android:layout_marginStart="176dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tyhd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total yang harus dibayar:"
+                    android:textSize="20sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/tyhd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="----------"
+                    android:layout_marginStart="260dp"
+                    android:layout_alignBottom="@+id/tyhd"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/jumtran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Transfer:"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/jumtran2"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="isi nominal yang ditransfer"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="170dp"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/naba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Bank         :"
+                    android:textSize="20sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/naba2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="nama Bank anda"
+                    android:textSize="12sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="167dp"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:id="@+id/bp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Batas pembayaran:"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/bp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="------"
+                    android:layout_marginStart="195dp"
+                    android:layout_alignBottom="@+id/bp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/garis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="-----------------------------"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/logo1"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/bca" />
+
+                <TextView
+                    android:id="@+id/BT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="060-044-2121"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/BT2"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/BT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/BT1"
+                    android:layout_marginEnd="10dp"
+                    android:text="atas nama: Ariyo"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="uplouad"
+                   android:textColor="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/konfir"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="konfirmasi"
+                   android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

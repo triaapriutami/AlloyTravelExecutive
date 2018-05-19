@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="mobile.skripsi.alloytravelexecutive.LoginActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
     <TextView
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="username"
-        android:textAlignment="viewStart"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="20dp" />
 
     <EditText
@@ -20,7 +22,8 @@
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:text="username"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"/>
 
     <TextView
         android:id="@+id/password1"
@@ -28,18 +31,21 @@
         android:layout_height="wrap_content"
         android:text="password"
         android:textAlignment="viewStart"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
     <EditText
         android:id="@+id/passw2"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:text="password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"/>
 
     <Button
         android:id="@+id/login2"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginLeft="100dp"
-        android:text="login" />
+        android:text="login"
+        android:textColor="@android:color/black"/>
 </LinearLayout>
