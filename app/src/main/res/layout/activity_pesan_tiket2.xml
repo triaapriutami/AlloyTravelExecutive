@@ -12,10 +12,66 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/ka1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="kota asal"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/kaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="........."
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/kt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="kota tujuan"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/ktt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="........."
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -27,18 +83,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="pergi"
-                    android:textSize="12sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/pergi2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="........."
-                    android:textSize="12sp"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:layout_centerVertical="true"
+                    android:text="........."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -51,18 +107,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Harga IDR"
-                    android:textSize="12sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/hi1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="........."
-                    android:textSize="12sp"
-                    android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@android:color/black"/>
+                    android:layout_centerVertical="true"
+                    android:text="........."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -75,18 +131,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Total"
-                    android:textSize="12sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/total2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="........."
-                    android:textSize="12sp"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:textColor="@android:color/black"/>
+                    android:layout_centerVertical="true"
+                    android:text="........."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -98,11 +154,11 @@
                     android:id="@+id/batas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="---------------------------"
-                    android:textSize="18sp"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:layout_centerVertical="true"
+                    android:text="---------------------------"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -115,7 +171,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Informasi kontak yang dapat dihubungin"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black" />
 
                 <TextView
                     android:id="@+id/informasi2"
@@ -124,7 +180,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/informasi"
                     android:text="mohon mengisi data diri sesuai dengan nomor identitas, karena akan di tunjukan pada saat check-in"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black" />
 
                 <TextView
                     android:id="@+id/nama"
@@ -134,8 +190,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginBottom="10dp"
                     android:text="nama"
-                    android:textSize="12sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText"
@@ -147,8 +203,8 @@
                     android:layout_toEndOf="@+id/tel"
                     android:inputType="text"
                     android:text="nama sesui dengan kartu identitas"
-                    android:textSize="10sp"
-                   android:textColor="@android:color/black" />
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp" />
 
                 <TextView
                     android:id="@+id/tel"
@@ -158,8 +214,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginBottom="12dp"
                     android:text="no.telepon"
-                    android:textSize="10sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp" />
 
                 <EditText
                     android:id="@+id/editText2"
@@ -170,8 +226,8 @@
                     android:layout_alignStart="@+id/editText"
                     android:inputType="number"
                     android:text="no.telepon"
-                    android:textSize="10sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp" />
 
             </RelativeLayout>
 
@@ -184,11 +240,11 @@
                     android:id="@+id/batas2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="-----------------------------"
-                    android:textSize="18sp"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:layout_centerVertical="true"
+                    android:text="---------------------------"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
             </RelativeLayout>
 
             <TextView
@@ -198,8 +254,8 @@
                 android:layout_marginTop="5dp"
                 android:text="Data Penumpang"
                 android:textAlignment="center"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/dp1"
@@ -207,26 +263,41 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="data penumpang 1"
-                android:textSize="12sp"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
 
             <Button
+                android:id="@+id/dp2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="data penumpang 2"
-                android:id="@+id/dp2"
-                android:textSize="12sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
 
-            <Button
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="selesai"
-                android:id="@+id/selesai"
-                android:textSize="12sp"
-                android:textColor="@android:color/black"/>
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/transfer"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="informasi transfer"
+                    android:textColor="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/transfer2"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="konfirmasi transfer"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

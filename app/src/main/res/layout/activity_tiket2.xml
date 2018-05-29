@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mobile.skripsi.alloytravelexecutive.PesanTiketActivity"
-    android:orientation="vertical"
-    android:background="@android:color/white">
+    tools:context="mobile.skripsi.alloytravelexecutive.Tiket2Activity"
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,15 +42,15 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/nm2"
+                    android:id="@+id/nama"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="110dp"
                     android:text="-------------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -75,8 +74,8 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="110dp"
                     android:text="-------------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -104,6 +103,86 @@
                     android:text="no.ktp/sim"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/ka1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="kota asal"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/kaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="110dp"
+                    android:text="-------------------"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/kt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="kota tujuan"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ktt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="120dp"
+                    android:text="------------------"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tangkeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="tanggal keberangkatan"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tangkab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="254dp"
+                    android:layout_marginTop="8dp"
+                    android:text="--------"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -148,8 +227,8 @@
                 android:textColor="@android:color/black"
                 android:textSize="20dp" />
 
-
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
 
+
+</LinearLayout>

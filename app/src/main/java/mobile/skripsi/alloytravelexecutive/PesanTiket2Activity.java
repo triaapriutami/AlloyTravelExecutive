@@ -10,7 +10,8 @@ public class PesanTiket2Activity extends AppCompatActivity {
 
     private Button buttondp1;
     private Button buttondp2;
-    private Button buttonselesai;
+    private Button buttontransfer;
+    private Button buttontransfer2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +36,20 @@ public class PesanTiket2Activity extends AppCompatActivity {
             }
         });
 
-        buttonselesai =(Button)findViewById(R.id.selesai);
-        buttonselesai.setOnClickListener(new View.OnClickListener() {
+        buttontransfer = (Button) findViewById(R.id.transfer);
+        buttontransfer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PesanTiket2Activity.this, MainActivity.class);
+                Intent inten = new Intent(PesanTiket2Activity.this, InformasiTransferActivity.class);
+                startActivity(inten);
+            }
+        });
+
+        buttontransfer2 = (Button) findViewById(R.id.transfer2);
+        buttontransfer2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PesanTiket2Activity.this, KonfirmasiActivity.class);
                 startActivity(intent);
             }
         });
