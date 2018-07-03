@@ -4,10 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mobile.skripsi.alloytravelexecutive.RegistrasiActivity">
+    tools:context="mobile.skripsi.alloytravelexecutive.RegistrasiActivity"
+    android:orientation="vertical">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
 
+        <TextView
+            android:id="@+id/noin1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="no.identitas:"
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/noin2"
+            android:layout_alignBottom="@+id/noin2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/noin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/noin1"
+            android:inputType="text"
+            android:text="KTP/SIM"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/n1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="nama:"
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/n2"
+            android:layout_alignBottom="@+id/n2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="isi nama anda"
+            android:layout_marginStart="15dp"
+            android:id="@+id/n2"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/n1"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/al1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="alamat:"
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/al2"
+            android:layout_alignBottom="@+id/al2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="isi alamat anda sesuai KTP/SIM"
+            android:layout_marginStart="15dp"
+            android:id="@+id/al2"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/al1"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/notel1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="no.telp:"
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/notel2"
+            android:layout_alignBottom="@+id/notel2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="isi no.telpon anda"
+            android:layout_marginStart="15dp"
+            android:id="@+id/notel2"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/notel1"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registrasi"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="120dp"
+        android:text="registrasi"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="1dp"/>
 </LinearLayout>
