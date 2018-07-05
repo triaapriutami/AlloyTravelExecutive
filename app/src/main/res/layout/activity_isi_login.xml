@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobile.skripsi.alloytravelexecutive.IsiLoginActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="data pemesanan"
+        android:id="@+id/datapem"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="data penumpang"
+        android:id="@+id/datapen"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"/>
+
+
+</LinearLayout>

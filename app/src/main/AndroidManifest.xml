@@ -122,7 +122,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".RegistrasiActivity"></activity>
+        <activity android:name=".RegistrasiActivity" />
+        <activity android:name=".IsiLoginActivity"></activity>
     </application>
 
 </manifest>
