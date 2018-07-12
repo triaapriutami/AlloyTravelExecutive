@@ -123,7 +123,9 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".RegistrasiActivity" />
-        <activity android:name=".IsiLoginActivity"></activity>
+        <activity android:name=".IsiLoginActivity" />
+        <activity android:name=".IsiLogin2Activity" />
+        <activity android:name=".DataPenumpangActivity"></activity>
     </application>
 
 </manifest>

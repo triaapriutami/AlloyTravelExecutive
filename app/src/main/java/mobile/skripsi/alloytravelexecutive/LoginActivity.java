@@ -10,6 +10,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button buttonlogin;
     private Button buttonregistrasi;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,5 +32,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 }

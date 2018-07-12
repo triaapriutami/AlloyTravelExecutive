@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mobile.skripsi.alloytravelexecutive.IsiLoginActivity"
+    tools:context="mobile.skripsi.alloytravelexecutive.IsiLogin2Activity"
     android:orientation="vertical">
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="data pemesanan"
-        android:id="@+id/datapem"
+        android:text="data penumpang"
+        android:id="@+id/datapen"
         android:layout_marginTop="10dp"
         android:textColor="@android:color/black"/>
-
-
 
 </LinearLayout>
