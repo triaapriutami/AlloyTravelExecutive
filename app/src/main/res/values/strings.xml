@@ -18,4 +18,7 @@
         <item>Kelet</item>
         <item>Jepara</item>
     </string-array>
+
+    <string name="Lunas"></string>
+    <string name="Pending"></string>
 </resources>

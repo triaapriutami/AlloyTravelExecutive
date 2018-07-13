@@ -45,7 +45,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".LihatJadwalActivity"
+            android:name=".LihatJadwalActivity">
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -122,10 +122,21 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".RegistrasiActivity" />
+
+        <activity android:name=".RegistrasiActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity android:name=".IsiLoginActivity" />
         <activity android:name=".IsiLogin2Activity" />
-        <activity android:name=".DataPenumpangActivity"></activity>
+        <activity android:name=".DataPenumpangActivity" />
+        <!--<activity android:name=".OneFragmentActivity" />-->
+        <!--<activity android:name=".TwoFragmentActivity">-->
+            <!---->
+        <!--</activity>-->
     </application>
 
 </manifest>
