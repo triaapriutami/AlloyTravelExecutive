@@ -20,5 +20,7 @@
     </string-array>
 
     <string name="Lunas"></string>
+    <string name="pendingv"></string>
     <string name="Pending"></string>
+    <string name="Penumpang"></string>
 </resources>
