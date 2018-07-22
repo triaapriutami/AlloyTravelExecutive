@@ -11,12 +11,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import mobile.skripsi.alloytravelexecutive.model.Tikeet;
+import mobile.skripsi.alloytravelexecutive.model.Tikeet2;
 
 public class RecyclerViewAdapter3 extends RecyclerView.Adapter<RecyclerViewAdapter3.ViewHolder>{
-    private ArrayList<Tikeet> rvData;
+    private ArrayList<Tikeet2> rvData;
 
     private Context context;
-    public RecyclerViewAdapter3(ArrayList<Tikeet> inputData){
+    public RecyclerViewAdapter3(ArrayList<Tikeet2> inputData){
         rvData = inputData;
     }
 
@@ -48,12 +49,12 @@ public class RecyclerViewAdapter3 extends RecyclerView.Adapter<RecyclerViewAdapt
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position){
-            final Tikeet tikeet= rvData.get(position);
-            holder.kotaasal.setText(tikeet.getNama());
-            holder.kotatujuan.setText(tikeet.getAlamat());
-            holder.hargaidr.setText(tikeet.getNotelpn());
-            holder.pergi1.setText(tikeet.getKeberangkatan());
-            holder.total1.setText(tikeet.getJumlah());
+            final Tikeet2 tikeet2= rvData.get(position);
+            holder.kotaasal.setText(tikeet2.getNama());
+            holder.kotatujuan.setText(tikeet2.getAlamat());
+            holder.hargaidr.setText(tikeet2.getNotelpn());
+            holder.pergi1.setText(tikeet2.getKeberangkatan());
+            holder.total1.setText(tikeet2.getJumlah());
 
 
             holder.itemView.setOnClickListener(new View.OnClickListener() {

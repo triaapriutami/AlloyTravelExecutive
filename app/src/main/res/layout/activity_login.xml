@@ -55,7 +55,8 @@
             android:textColor="@android:color/black"
             android:layout_marginStart="23dp"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:onClick="loginmasuk"/>
 
         <Button
             android:id="@+id/registrasi"
