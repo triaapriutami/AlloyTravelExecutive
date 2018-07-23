@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    private Button buttonlogin;
+//    private Button buttonlogin;
     private Button buttonregistrasi;
 
     EditText editText1, editText2;
@@ -50,17 +50,18 @@ public class LoginActivity extends AppCompatActivity {
         if ((text1.contains("pengelola"))&&((text2.contains("password")))){
             Toast.makeText(this,"Login Sukses", Toast.LENGTH_SHORT).show();
 
-            buttonlogin = (Button) findViewById(R.id.login2);
-            buttonlogin.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(LoginActivity.this, IsiLoginActivity.class);
-                    startActivity(intent);
-                }
-            });
+//            buttonlogin = (Button) findViewById(R.id.login2);
+//            buttonlogin.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(LoginActivity.this, IsiLoginActivity.class);
+//                    startActivity(intent);
+//                }
+//            }
+//            );
 
-//            Intent intent = new Intent(LoginActivity.this, IsiLoginActivity.class);
-//            startActivity(intent);
+            Intent intent = new Intent(LoginActivity.this, IsiLoginActivity.class);
+            startActivity(intent);
         }
 
         else if((text1.contains("supir"))&&((text2.contains("password")))){
@@ -68,15 +69,20 @@ public class LoginActivity extends AppCompatActivity {
 //            Intent intent = new Intent(LoginActivity.this, IsiLogin2Activity.class);
 //            startActivity(intent);
 
-            buttonlogin = (Button) findViewById(R.id.login2);
-            buttonlogin.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(LoginActivity.this, IsiLogin2Activity.class);
-                    startActivity(intent);
-                }
-            });
+//            buttonlogin = (Button) findViewById(R.id.login2);
+//            buttonlogin.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(LoginActivity.this, IsiLogin2Activity.class);
+//                    startActivity(intent);
+//                }
+////            });
+//        }
+
+            Intent intent = new Intent(LoginActivity.this, IsiLogin2Activity.class);
+            startActivity(intent);
         }
+
 
         else if ((text1.matches("")||text2.matches(""))){
             /*atau jika input text 1 dan text 2 kosong*/
