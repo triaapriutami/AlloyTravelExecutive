@@ -18,7 +18,7 @@ public class InformasiTransferActivity extends AppCompatActivity {
         buttonkontran.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(InformasiTransferActivity.this, StatusTiketActivity.class);
+                Intent intent = new Intent(InformasiTransferActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -9,9 +9,7 @@ import android.widget.Button;
 public class PesanTiketActivity extends AppCompatActivity {
 
     private Button buttonkursi;
-
-
-
+    private Button buttonselesai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +22,15 @@ public class PesanTiketActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PesanTiketActivity.this, LihatKursiActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonselesai = (Button) findViewById(R.id.sel);
+        buttonselesai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PesanTiketActivity.this, PesanTiket2Activity.class);
                 startActivity(intent);
             }
         });

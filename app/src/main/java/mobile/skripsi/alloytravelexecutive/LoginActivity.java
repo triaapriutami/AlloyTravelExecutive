@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
 //    Button btnLogin;
 
     EditText editText1, editText2;
-    String text1, text2;
+    String username, password;
 
 
     @Override
@@ -73,22 +73,23 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void loginmasuk(View view) {
 
-        editText1 = (EditText) findViewById(R.id.username);
+        editText1 = (EditText) findViewById(R.id.un);
         editText2 = (EditText) findViewById(R.id.passw2);
-        text1 = editText1.getText().toString();
-        text2 = editText1.getText().toString();
 
-        if ((text1.contains("pengelola")) && ((text2.contains("1234")))) {
+        username = editText1.getText().toString();
+        password = editText2.getText().toString();
+
+        if ((username.equals("pengelola")) && ((password.equals("1234")))) {
             Toast.makeText(this, "Login Sukses", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this, IsiLoginActivity.class);
             startActivity(intent);
-        } else if ((text1.contains("supir")) && ((text2.contains("5678")))) {
+        } else if ((username.equals("supir")) && ((password.equals("5678")))) {
             Toast.makeText(this, "Login Sukses", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this, IsiLogin2Activity.class);
             startActivity(intent);
         }
 
-        else if ((text1.matches("")||text2.matches(""))){
+        else if ((username.matches("")||password.matches(""))){
             /*atau jika input text 1 dan text 2 kosong*/
             // maka akan menampilkan pesan text tost
             Toast.makeText(this,"Isikan Username dan Password", Toast.LENGTH_SHORT).show();

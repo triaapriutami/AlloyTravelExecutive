@@ -10,8 +10,9 @@ public class PesanTiket2Activity extends AppCompatActivity {
 
     private Button buttondp1;
     private Button buttondp2;
-    private Button buttontransfer;
-    private Button buttontransfer2;
+//    private Button buttontransfer;
+//    private Button buttontransfer2;
+    private Button buttonbooking;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,17 +37,26 @@ public class PesanTiket2Activity extends AppCompatActivity {
             }
         });
 
-        buttontransfer = (Button) findViewById(R.id.transfer);
-        buttontransfer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent inten = new Intent(PesanTiket2Activity.this, InformasiTransferActivity.class);
-                startActivity(inten);
-            }
-        });
+//        buttontransfer = (Button) findViewById(R.id.transfer);
+//        buttontransfer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent inten = new Intent(PesanTiket2Activity.this, InformasiTransferActivity.class);
+//                startActivity(inten);
+//            }
+//        });
+//
+//        buttontransfer2 = (Button) findViewById(R.id.transfer2);
+//        buttontransfer2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(PesanTiket2Activity.this, KonfirmasiActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
-        buttontransfer2 = (Button) findViewById(R.id.transfer2);
-        buttontransfer2.setOnClickListener(new View.OnClickListener() {
+        buttonbooking = (Button) findViewById(R.id.booking);
+        buttonbooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PesanTiket2Activity.this, KonfirmasiActivity.class);

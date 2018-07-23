@@ -26,6 +26,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public TextView Idr1;
         public TextView Jam1;
         public TextView Tujuan;
+        public TextView PlatMobil;
 
         public ViewHolder(View v){
             super(v);
@@ -34,6 +35,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             Idr1 = (TextView) v.findViewById(R.id.idr1);
             Jam1 = (TextView) v.findViewById(R.id.jam1);
             Tujuan = (TextView) v.findViewById(R.id.tujuan);
+            PlatMobil = (TextView) v.findViewById(R.id.plat);
         }
     }
 
@@ -53,6 +55,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.Shuttle1.setText(tiket.getJenisMobil());
         holder.Idr1.setText(tiket.getHargaMobil());
         holder.Jam1.setText(tiket.getJam());
+        holder.PlatMobil.setText(tiket.getPlatmobill());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -6,16 +6,18 @@ public class Tiket {
     private String jenisMobil;
     private String hargaMobil;
     private String jam;
+    private String platmobil;
 
     public Tiket() {
     }
 
-    public Tiket(String namaKota, String merkMobil, String jenisMobil, String hargaMobil, String jam) {
+    public Tiket(String namaKota, String merkMobil, String jenisMobil, String hargaMobil, String jam, String platmobil) {
         this.namaKota = namaKota;
         this.merkMobil = merkMobil;
         this.jenisMobil = jenisMobil;
         this.hargaMobil = hargaMobil;
         this.jam = jam;
+        this.platmobil = platmobil;
     }
 
     public String getNamaKota() {
@@ -57,4 +59,11 @@ public class Tiket {
     public void setJam(String jam) {
         this.jam = jam;
     }
+
+    public String getPlatmobill() {
+        return platmobil;
+    }
+
+    public void setPlatmobil(String platmobil) {this.platmobil = platmobil;}
+
 }

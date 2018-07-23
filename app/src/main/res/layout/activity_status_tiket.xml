@@ -7,47 +7,20 @@
     tools:context="mobile.skripsi.alloytravelexecutive.StatusTiketActivity"
     android:orientation="vertical">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-    <RelativeLayout
+    <TextView
+        android:id="@+id/status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="status tiket"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/status"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:text="status tiket"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
-
-        <Button
-            android:id="@+id/sty"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="200dp"
-            android:text="status tiket saya"
-            android:layout_marginEnd="86dp"
-            android:textColor="@android:color/black"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
 </LinearLayout>

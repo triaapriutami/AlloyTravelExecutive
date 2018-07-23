@@ -281,23 +281,15 @@
                 android:layout_marginTop="10dp">
 
                 <Button
-                    android:id="@+id/transfer"
+                    android:id="@+id/booking"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
-                    android:text="informasi transfer"
-                    android:textColor="@android:color/black"/>
-
-                <Button
-                    android:id="@+id/transfer2"
-                    android:layout_width="150dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="200dp"
-                    android:text="konfirmasi transfer"
+                    android:text="booking"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:textColor="@android:color/black"/>
-            </RelativeLayout>
+                    android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
