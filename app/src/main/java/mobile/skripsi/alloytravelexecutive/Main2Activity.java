@@ -83,15 +83,15 @@ public class Main2Activity extends AppCompatActivity {
         dataSet.add(new Tiket("Jogya-Jepara(*Transit smg)","TOYOTA","SHUTTEL","125000","12.00", "H 7098 FH"));
         dataSet.add(new Tiket("Jogya-Jepara(*Transit smg)","TOYOTA","SHUTTEL","125000","14.00", "H 321 DE"));
 
-        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","06.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","07.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","08.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","09.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","10.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","12.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","14.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","16.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","18.00", "H 1469 GG"));
+        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","06.00", "H 1469 AA"));
+        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","07.00", "H 1469 DF"));
+        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","08.00", "H 1469 WE"));
+        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","09.00", "H 1469 AS"));
+        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","10.00", "H 1469 BA"));
+        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","12.00", "H 1469 TY"));
+        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","14.00", "H 1469 XT"));
+        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","16.00", "H 1469 TX"));
+        dataSet.add(new Tiket("Semarang-Solo","TOYOTA","SHUTTEL","70000","18.00", "H 1469 UY"));
 
         dataSet.add(new Tiket("Solo-Semarang","TOYOTA","SHUTTEL","70000","05.00", "H 1469 GG"));
         dataSet.add(new Tiket("Solo-Semarang","TOYOTA","SHUTTEL","70000","06.00", "H 1469 GG"));
