@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     //deklarasi untuk tombol lihat jadwal, tenatng, tiket saya dan login
     private Button buttonlihatjadwal;
     private Button buttontentang;
-   // private Button buttontiketsaya;
+    private Button buttontiketsaya;
     private Button buttonlogin;
     private Button buttontiket;
 
@@ -37,14 +37,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        buttontiketsaya = (Button) findViewById(R.id.pesantiket);// digunakan untuk mengaktifan tombol tiket saya
-//        buttontiketsaya.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent inten = new Intent(MainActivity.this, TiketActivity.class);
-//                startActivity(inten);
-//            }
-//        });
+        buttontiketsaya = (Button) findViewById(R.id.pesantiket);// digunakan untuk mengaktifan tombol tiket saya
+        buttontiketsaya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inten = new Intent(MainActivity.this, TiketActivity.class);
+                startActivity(inten);
+            }
+        });
 
         buttonlogin = (Button) findViewById(R.id.login); // digunakan untuk mengaktifkan tombol login
         buttonlogin.setOnClickListener(new View.OnClickListener() {

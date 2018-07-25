@@ -59,7 +59,7 @@ public class PesanTiket2Activity extends AppCompatActivity {
         buttonbooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PesanTiket2Activity.this, KonfirmasiActivity.class);
+                Intent intent = new Intent(PesanTiket2Activity.this, TiketActivity.class);
                 startActivity(intent);
             }
         });

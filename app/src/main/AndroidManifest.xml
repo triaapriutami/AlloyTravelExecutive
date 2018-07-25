@@ -152,7 +152,8 @@
         <!-- </activity> -->
         <!-- <activity android:name=".OneFragment2Activity"></activity> -->
         <activity android:name=".OneFragment" />
-        <activity android:name=".DataPenumpang2Activity"></activity>
+        <activity android:name=".DataPenumpang2Activity" />
+        <activity android:name=".StatusTiket2Activity"></activity>
     </application>
 
 </manifest>

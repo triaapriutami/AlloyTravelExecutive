@@ -7,20 +7,169 @@
     tools:context="mobile.skripsi.alloytravelexecutive.StatusTiketActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/status"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gambar1" />
+
+        <TextView
+            android:id="@+id/tujuan"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/toyota1"
+            android:layout_marginTop="5dp"
+            android:text="TUJUAN:"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tujuan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tujuan"
+            android:layout_alignBottom="@+id/tujuan"
+            android:layout_toEndOf="@+id/shuttel1"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/toyota1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageview1"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageview1"
+            android:text="Mobil:"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shuttel1"
+            android:layout_toEndOf="@+id/shuttel1"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shuttel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/toyota1"
+            android:layout_below="@+id/toyota1"
+            android:layout_marginTop="5dp"
+            android:text="Jenis Mobil:"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jenismobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/idr1"
+            android:layout_toEndOf="@+id/shuttel1"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/idr1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/shuttel1"
+            android:layout_below="@+id/shuttel1"
+            android:layout_marginTop="5dp"
+            android:text="Harga : "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/idr1"
+            android:layout_alignBottom="@+id/idr1"
+            android:layout_alignStart="@+id/jm"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jam1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idr1"
+            android:layout_below="@+id/idr1"
+            android:layout_marginTop="5dp"
+            android:text="Jam:"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/jam1"
+            android:layout_alignBottom="@+id/jam1"
+            android:layout_toEndOf="@+id/shuttel1"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/plat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/jam1"
+            android:layout_below="@+id/jam1"
+            android:layout_marginTop="5dp"
+            android:text="plat mobil: "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/platm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/jm"
+            android:layout_below="@+id/jam1"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:text="status tiket"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp" />
+        android:layout_marginTop="10dp">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical" />
+        <Button
+            android:id="@+id/sty"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="200dp"
+            android:text="status tiket saya"
+            android:textColor="@android:color/black"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
 </LinearLayout>

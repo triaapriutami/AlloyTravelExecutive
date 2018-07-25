@@ -11,40 +11,50 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 
-import mobile.skripsi.alloytravelexecutive.model.StatusTiket;
+//import mobile.skripsi.alloytravelexecutive.model.StatusTiketi;
 
 public class StatusTiketActivity extends AppCompatActivity {
-    private RecyclerView rvView;
-    private RecyclerViewAdapter5 adapter;
-    private LinearLayoutManager layoutmanager;
-    private ArrayList<StatusTiket> dataSet;
+////    private RecyclerView rvView;
+////    private RecyclerViewAdapter5 adapter;
+////    private LinearLayoutManager layoutmanager;
+////    private ArrayList<StatusTiketi> dataSet;
 
+            private Button buttonsty;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_status_tiket);
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState);
+                setContentView(R.layout.activity_status_tiket);
 
-        dataSet = new ArrayList<>();
-        initDataSet();
+                buttonsty = (Button) findViewById(R.id.sty);
+                buttonsty.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent inten = new Intent(StatusTiketActivity.this, StatusTiket2Activity.class);
+                        startActivity(inten);
+                    }
+                });
 
-        rvView = (RecyclerView) findViewById(R.id.rv_main);
-        rvView.setHasFixedSize(true);
-
-        layoutmanager = new LinearLayoutManager(this);
-        rvView.setLayoutManager(layoutmanager);
-
-        adapter = new RecyclerViewAdapter5(dataSet);
-        rvView.setAdapter(adapter);
-    }
-
-    private void initDataSet(){
-        dataSet.add(new StatusTiket("nama","kota asal","kota tujuan","no kursi","total"));
-
-        dataSet.add(new StatusTiket("nama","kota asal","kota tujuan","no kursi","total"));
-
-        dataSet.add(new StatusTiket("nama","kota asal","kota tujuan","no kursi","total"));
-
-        dataSet.add(new StatusTiket("nama","kota asal","kota tujuan","no kursi","total"));
+////        dataSet = new ArrayList<>();
+////        initDataSet();
+////
+////        rvView = (RecyclerView) findViewById(R.id.rv_main);
+////        rvView.setHasFixedSize(true);
+////
+////        layoutmanager = new LinearLayoutManager(this);
+////        rvView.setLayoutManager(layoutmanager);
+////
+////        adapter = new RecyclerViewAdapter5(dataSet);
+////        rvView.setAdapter(adapter);
+////    }
+////
+////    private void initDataSet(){
+////        dataSet.add(new StatusTiket1("nama","kota asal","kota tujuan","no kursi","total"));
+////
+////        dataSet.add(new StatusTiket1("nama","kota asal","kota tujuan","no kursi","total"));
+////
+////        dataSet.add(new StatusTiket1("nama","kota asal","kota tujuan","no kursi","total"));
+////
+////        dataSet.add(new StatusTiket1("nama","kota asal","kota tujuan","no kursi","total"));
     }
 }
