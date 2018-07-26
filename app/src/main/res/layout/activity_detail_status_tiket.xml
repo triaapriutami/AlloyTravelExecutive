@@ -315,6 +315,31 @@
                 android:text="data penumpang 2"
                 android:textColor="@android:color/black"
                 android:textSize="12sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/intran"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="informasi transfer"
+                    android:textColor="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/kontran"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="konfirmasi transfer"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 
