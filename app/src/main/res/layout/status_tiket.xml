@@ -8,305 +8,175 @@
     android:orientation="vertical"
     android:background="@android:color/white">
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gambar1" />
+
+        <TextView
+            android:id="@+id/tujuan"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/toyota1"
+            android:layout_marginTop="5dp"
+            android:text="TUJUAN:"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tujuan2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tujuan"
+            android:layout_alignBottom="@+id/tujuan"
+            android:layout_toEndOf="@+id/shuttel1"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/judul2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="status tiket"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textSize="20sp" />
+        <TextView
+            android:id="@+id/toyota1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageview1"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageview1"
+            android:text="Mobil:"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/mobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shuttel1"
+            android:layout_toEndOf="@+id/shuttel1"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/nm"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:text="nama"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+        <TextView
+            android:id="@+id/shuttel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/toyota1"
+            android:layout_below="@+id/toyota1"
+            android:layout_marginTop="5dp"
+            android:text="Jenis Mobil:"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/nma"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="110dp"
-                    android:text="-------------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
+        <TextView
+            android:id="@+id/jenismobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_above="@+id/idr1"
+            android:layout_toEndOf="@+id/shuttel1"
+            android:layout_marginStart="13dp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/idr1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/shuttel1"
+            android:layout_below="@+id/shuttel1"
+            android:layout_marginTop="5dp"
+            android:text="Harga : "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/telp"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:text="no.telpon"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+        <TextView
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/idr1"
+            android:layout_alignBottom="@+id/idr1"
+            android:layout_alignStart="@+id/jm"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/notel"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="110dp"
-                    android:text="-------------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
+        <TextView
+            android:id="@+id/jam1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idr1"
+            android:layout_below="@+id/idr1"
+            android:layout_marginTop="5dp"
+            android:text="Jam:"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/jm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/jam1"
+            android:layout_alignBottom="@+id/jam1"
+            android:layout_toEndOf="@+id/shuttel1"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/nn"
-                    android:layout_width="110dp"
-                    android:layout_height="wrap_content"
-                    android:text="no.identitas"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+        <TextView
+            android:id="@+id/plat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/jam1"
+            android:layout_below="@+id/jam1"
+            android:layout_marginTop="5dp"
+            android:text="plat mobil: "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/ni"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="110dp"
-                    android:text="-------------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
+        <TextView
+            android:id="@+id/platm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/jm"
+            android:layout_below="@+id/jam1"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="status: "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_below="@+id/plat"
+            android:layout_alignStart="@+id/plat" />
 
-                <TextView
-                    android:id="@+id/ka1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="kota asal"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+        <TextView
+            android:id="@+id/status2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/status"
+            android:layout_alignBottom="@+id/status"
+            android:layout_toEndOf="@+id/status" />
+    </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/koas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="110dp"
-                    android:text="-------------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/kt2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="kota tujuan"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/kaa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="150dp"
-                    android:text="----------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/tk2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="tanggal keberangkatan"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/tangke"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="240dp"
-                    android:layout_marginTop="8dp"
-                    android:text="---------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:text="jumlah penumpang"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/jumpen"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="25dp"
-                    android:layout_toEndOf="@+id/textView"
-                    android:text="------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/nokur"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:text="no.kursi"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/noku"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="110dp"
-                    android:text="-------------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/nk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:text="total harga"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/th"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="110dp"
-                    android:text="-------------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/st"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:text="status"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/st2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="110dp"
-                    android:text="-------------------"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <Button
-                    android:id="@+id/bayar"
-                    android:layout_width="150dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="200dp"
-                    android:text="bayar"
-                    android:textColor="@android:color/black"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true" />
-            </RelativeLayout>
-
-        </LinearLayout>
-    </ScrollView>
 </LinearLayout >
