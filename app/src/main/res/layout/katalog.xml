@@ -55,23 +55,23 @@
             android:id="@+id/idr1"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/shuttel1"
-            android:layout_toEndOf="@+id/imageview1"
             android:text="Harga : IDR 80.000"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_below="@+id/shuttel1"
+            android:layout_alignStart="@+id/shuttel1" />
 
         <TextView
             android:id="@+id/jam1"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idr1"
+            android:layout_below="@+id/idr1"
             android:text="04.00"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:layout_below="@+id/idr1"
-            android:layout_alignStart="@+id/idr1" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/plat"

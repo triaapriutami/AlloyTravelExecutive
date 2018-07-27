@@ -102,49 +102,49 @@ public class Main2Activity extends AppCompatActivity {
         dataSet.add(new Tiket("Solo-Semarang","TOYOTA","SHUTTEL","70000","16.00", "AB 8063 KB"));
         dataSet.add(new Tiket("Solo-Semarang","TOYOTA","SHUTTEL","70000","18.00", "AB 5390 LK"));
 
-        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","05.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","06.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","08.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","10.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","12.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","14.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","16.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","18.00", "H 1469 GG"));
+        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","05.00", "H 180 XY"));
+        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","06.00", "H 567 FA"));
+        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","08.00", "H 342 YX"));
+        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","10.00", "H 178 DB"));
+        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","12.00", "H 912 KJ"));
+        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","14.00", "H 002 QQ"));
+        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","16.00", "H 881 ER"));
+        dataSet.add(new Tiket("Solo-Jepara(*Transit smg)","TOYOTA","SHUTTEL","120000","18.00", "H 111 DE"));
 
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","03.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","05.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","07.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","10.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","12.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","13.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","14.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","15.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","16.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","17.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","19.00", "H 1469 GG"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","03.00", "AB 302 RE"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","05.00", "H 678 TR"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","07.00", "AB 156 YU"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","10.00", "H 1234 PA"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","12.00", "AB 4561 SA"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","13.00", "H 0132 DG"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","14.00", "AB 3021 LA"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","15.00", "H 7002 BO"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","16.00", "AB 1122 BW"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","17.00", "H 222 AP"));
+        dataSet.add(new Tiket("Jepara-Semarang","TOYOTA","TRAVEL","50000","19.00", "AB 553 SS"));
 
-        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","03.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","05.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","07.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","10.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","13.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","15.00", "H 1469 GG"));
+        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","03.00", "H 469 GG"));
+        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","05.00", "AB 169 GG"));
+        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","07.00", "H 146 GG"));
+        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","10.00", "AB 69 GG"));
+        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","13.00", "H 2469 GG"));
+        dataSet.add(new Tiket("Jepara-Solo(*Transit smg)","TOYOTA","SHUTTEL","120000","15.00", "AB 369 GG"));
 
-        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","06.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","08.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","11.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","13.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","15.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","17.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","19.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","21.00", "H 1469 GG"));
+        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","06.00", "H 4469 EE"));
+        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","08.00", "AB 569 ER"));
+        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","11.00", "H 229 TE"));
+        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","13.00", "AB 3345 AB"));
+        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","15.00", "H 5663 GR"));
+        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","17.00", "AB 8985 GC"));
+        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","19.00", "H 9898 CB"));
+        dataSet.add(new Tiket("Semarang-Jepara","TOYOTA","TRAVEL","50000","21.00", "AB 0101 NN"));
 
-        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","03.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","05.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","07.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","10.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","13.00", "H 1469 GG"));
-        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","15.00", "H 1469 GG"));
+        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","03.00", "H 0202 MN"));
+        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","05.00", "AB 3031 LN"));
+        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","07.00", "H 8056 KN"));
+        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","10.00", "AB 4019 MM"));
+        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","13.00", "H 5079 CM"));
+        dataSet.add(new Tiket("Jepara-Jogya(*Transit smg)","TOYOTA","SHUTTEL","125000","15.00", "AB 1100 MG"));
 
 
     }

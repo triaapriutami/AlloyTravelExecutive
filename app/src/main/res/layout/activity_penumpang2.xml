@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mobile.skripsi.alloytravelexecutive.Penumpang1Activity"
+    tools:context="mobile.skripsi.alloytravelexecutive.Penumpang2Activity"
     android:orientation="vertical">
 
     <ScrollView
@@ -22,7 +22,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/kotaas"
+                    android:id="@+id/kotaasa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -34,7 +34,7 @@
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/kotaas2"
+                android:id="@+id/kotaasa2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -49,7 +49,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/kotatu"
+                    android:id="@+id/kotatuj"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -62,7 +62,7 @@
 
 
             <TextView
-                android:id="@+id/kotatu2"
+                android:id="@+id/kotatuu2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -77,7 +77,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/pergii"
+                    android:id="@+id/pergiii"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="pergi"
@@ -85,7 +85,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/pergii2"
+                    android:id="@+id/pergiii2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -101,7 +101,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/harga"
+                    android:id="@+id/hargaa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Harga IDR"
@@ -109,7 +109,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/harga2"
+                    android:id="@+id/hargaa2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -125,7 +125,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/tot"
+                    android:id="@+id/tota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Total"
@@ -133,7 +133,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/tot2"
+                    android:id="@+id/tota2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
@@ -149,7 +149,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/st"
+                    android:id="@+id/sta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="status"
@@ -157,7 +157,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/st2"
+                    android:id="@+id/sta2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
@@ -173,7 +173,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/batas"
+                    android:id="@+id/batasi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -189,83 +189,83 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/informasi"
+                    android:id="@+id/informasii"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Informasi Tiket Yang telah di booking"
                     android:textColor="@android:color/black" />
 
                 <TextView
-                    android:id="@+id/informasi2"
+                    android:id="@+id/informasii2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/informasi"
+                    android:layout_below="@+id/informasii"
                     android:text="mohon dicek kembali data yang telah dimasukan, karena akan di tunjukan pada saat check-in"
                     android:textColor="@android:color/black" />
 
                 <TextView
-                    android:id="@+id/nama1"
+                    android:id="@+id/nama12"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/informasi2"
+                    android:layout_below="@+id/informasii2"
                     android:text="nama"
                     android:textColor="@android:color/black"
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/nama2"
+                    android:id="@+id/nama22"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/nama1"
-                    android:layout_alignBottom="@+id/nama1"
+                    android:layout_alignBaseline="@+id/nama12"
+                    android:layout_alignBottom="@+id/nama12"
                     android:layout_marginStart="11dp"
-                    android:layout_toEndOf="@+id/telepon"
+                    android:layout_toEndOf="@+id/telepon1"
                     android:text="........................"
                     android:textColor="@android:color/black"
                     android:textSize="10sp" />
 
                 <TextView
-                    android:id="@+id/telepon"
+                    android:id="@+id/telepon1"
                     android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/nama1"
+                    android:layout_below="@+id/nama12"
                     android:layout_marginTop="11dp"
                     android:text="no.telepon"
                     android:textColor="@android:color/black"
                     android:textSize="10sp" />
 
                 <TextView
-                    android:id="@+id/telepon2"
+                    android:id="@+id/telepon21"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/telepon"
-                    android:layout_alignBottom="@+id/telepon"
-                    android:layout_alignStart="@+id/nama2"
+                    android:layout_alignBaseline="@+id/telepon1"
+                    android:layout_alignBottom="@+id/telepon1"
+                    android:layout_alignStart="@+id/nama22"
                     android:text=".........................."
                     android:textColor="@android:color/black"
                     android:textSize="10sp" />
 
                 <TextView
-                    android:id="@+id/nokursi"
+                    android:id="@+id/nokursii"
                     android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/telepon"
+                    android:layout_below="@+id/telepon1"
                     android:layout_marginTop="14dp"
                     android:text="no.kursi"
                     android:textColor="@android:color/black"
                     android:textSize="10sp" />
 
                 <TextView
-                    android:id="@+id/nokursi2"
+                    android:id="@+id/nokursi21"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/nokursi"
-                    android:layout_alignBottom="@+id/nokursi"
-                    android:layout_alignStart="@+id/telepon2"
+                    android:layout_alignBaseline="@+id/nokursii"
+                    android:layout_alignBottom="@+id/nokursii"
+                    android:layout_alignStart="@+id/telepon21"
                     android:text=".........................."
                     android:textColor="@android:color/black"
                     android:textSize="10sp" />
@@ -279,27 +279,27 @@
                 android:layout_marginTop="10dp">
 
                 <Button
-                    android:id="@+id/intran"
+                    android:id="@+id/intran1"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
                     android:text="informasi transfer"
                     android:textColor="@android:color/black"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="26dp" />
+                    android:layout_marginStart="18dp" />
 
                 <Button
-                    android:id="@+id/kontran"
+                    android:id="@+id/kontran1"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="200dp"
                     android:text="konfirmasi transfer"
                     android:textColor="@android:color/black"
-                    android:layout_marginEnd="28dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true" />
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="19dp" />
 
-                 </RelativeLayout>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 

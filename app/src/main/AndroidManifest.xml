@@ -155,7 +155,8 @@
         <activity android:name=".DataPenumpang2Activity" />
         <activity android:name=".StatusTiket2Activity" />
         <activity android:name=".DetailStatusTiketActivity" />
-        <activity android:name=".Penumpang1Activity"></activity>
+        <activity android:name=".Penumpang1Activity" />
+        <activity android:name=".Penumpang2Activity"></activity>
     </application>
 
 </manifest>

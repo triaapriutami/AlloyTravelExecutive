@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class DetailStatusTiketActivity extends AppCompatActivity {
     private Button buttondatapenumpang1;
+    private Button buttondatapenumpang2;
     private Button buttonintar;
     private Button buttonkontar;
 
@@ -20,6 +21,15 @@ public class DetailStatusTiketActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DetailStatusTiketActivity.this, Penumpang1Activity.class);
+                startActivity(intent);
+            }
+        });
+        //
+        buttondatapenumpang2 = (Button) findViewById(R.id.dp2);
+        buttondatapenumpang2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailStatusTiketActivity.this, Penumpang2Activity.class);
                 startActivity(intent);
             }
         });
