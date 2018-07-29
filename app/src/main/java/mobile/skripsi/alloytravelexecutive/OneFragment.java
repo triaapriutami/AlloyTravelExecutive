@@ -1,8 +1,7 @@
 package mobile.skripsi.alloytravelexecutive;
 
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,14 +10,14 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import mobile.skripsi.alloytravelexecutive.model.Tikeet;
-import mobile.skripsi.alloytravelexecutive.model.Tikeet3;
+import mobile.skripsi.alloytravelexecutive.model.Tiket2;
 
-public class OneFragment extends Fragment{
+public class OneFragment extends Fragment {
+
     private RecyclerView rvView;
     private RecyclerViewAdapter4 adapter;
     private LinearLayoutManager layoutmanager;
-    private ArrayList<Tikeet3> dataset;
+    private ArrayList<Tiket2> dataset;
 
     public OneFragment() {
         // Required empty public constructor
@@ -27,7 +26,6 @@ public class OneFragment extends Fragment{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -49,13 +47,23 @@ public class OneFragment extends Fragment{
         return v;
     }
 
+
     private void initDataSet() {
-        dataset.add(new Tikeet3("nama","alamat","notelpn","keberangkatan","jumlah"));
 
-        dataset.add(new Tikeet3("nama","alamat","notelpn","keberangkatan","jumlah"));
+        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
 
-        dataset.add(new Tikeet3("nama","alamat","notelpn","keberangkatan","jumlah"));
+        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
 
-        dataset.add(new Tikeet3("nama","alamat","notelpn","keberangkatan","jumlah"));
+        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+
+        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+
+        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+
+        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+
+        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+
+        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
     }
 }

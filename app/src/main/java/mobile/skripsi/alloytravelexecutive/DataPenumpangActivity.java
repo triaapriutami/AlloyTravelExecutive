@@ -17,6 +17,7 @@ public class DataPenumpangActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,7 @@ public class DataPenumpangActivity extends AppCompatActivity {
     }
 
     private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        DataPenumpangActivity.ViewPagerAdapter adapter = new DataPenumpangActivity.ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new OneFragmentActivity(), "LUNAS");
         adapter.addFrag(new TwoFragmentActivity(), "PENDING");
 

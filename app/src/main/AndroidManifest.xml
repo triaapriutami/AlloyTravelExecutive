@@ -2,17 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mobile.skripsi.alloytravelexecutive">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/MyMaterialTheme">
+        android:theme="@style/AppTheme.Base">
 
         <!-- android:theme="@style/MyMaterialTheme -->
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.Base">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -145,18 +150,58 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".DataPenumpangActivity" />
+        <activity
+            android:name=".DataPenumpangActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <!-- <activity android:name=".OneFragmentActivity" /> -->
         <!-- <activity android:name=".TwoFragmentActivity"> -->
         <!--  -->
         <!-- </activity> -->
-        <!-- <activity android:name=".OneFragment2Activity"></activity> -->
-        <activity android:name=".OneFragment" />
+
+        <activity
+            android:name=".StatusTiket2Activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".DetailStatusTiketActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Penumpang1Activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Penumpang2Activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".DetailPenumpangActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".DetailPenumpang2Activity" />
+        <activity android:name=".DetailPenumpang3Activity" />
         <activity android:name=".DataPenumpang2Activity" />
-        <activity android:name=".StatusTiket2Activity" />
-        <activity android:name=".DetailStatusTiketActivity" />
-        <activity android:name=".Penumpang1Activity" />
-        <activity android:name=".Penumpang2Activity"></activity>
+        <activity android:name=".OneFragment" />
+        <activity android:name=".DetailPenumpang4Activity"></activity>
     </application>
 
 </manifest>

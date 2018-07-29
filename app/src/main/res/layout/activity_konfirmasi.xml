@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,40 +7,84 @@
     tools:context="mobile.skripsi.alloytravelexecutive.KonfirmasiActivity"
     android:orientation="vertical">
 
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="110dp">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/judul1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi Tiket"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="50dp">
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp">
 
                 <TextView
                     android:id="@+id/no.Rek"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nomor Rekening:"
-                    android:textSize="20sp"
                     android:layout_alignBaseline="@+id/number"
                     android:layout_alignBottom="@+id/number"
                     android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:text="Nomor Rekening:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/number"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="163dp"
                     android:ems="10"
                     android:inputType="number"
                     android:text="nomor rekening anda"
-                    android:textSize="12sp"
-                    android:layout_marginStart="163dp"
-                    android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -51,25 +95,25 @@
                     android:id="@+id/name1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nama                   :"
-                    android:textSize="20sp"
                     android:layout_alignBaseline="@+id/name2"
                     android:layout_alignBottom="@+id/name2"
                     android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:text="Nama                   :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/name2"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="176dp"
                     android:ems="10"
                     android:inputType="text"
                     android:text="isi nama anda"
-                    android:textSize="12sp"
-                    android:layout_marginStart="176dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -80,21 +124,21 @@
                     android:id="@+id/tyhd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Total yang harus dibayar:"
-                    android:textSize="20sp"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:layout_alignParentTop="true"
+                    android:text="Total yang harus dibayar:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tyhd2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="----------"
-                    android:layout_marginStart="260dp"
                     android:layout_alignBottom="@+id/tyhd"
                     android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:layout_marginStart="260dp"
+                    android:text="----------"
+                    android:textColor="@android:color/black" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -105,24 +149,24 @@
                     android:id="@+id/jumtran"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Jumlah Transfer:"
-                    android:textSize="20sp"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:layout_centerVertical="true"
+                    android:text="Jumlah Transfer:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/jumtran2"
                     android:layout_width="210dp"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="170dp"
                     android:ems="10"
                     android:inputType="number"
                     android:text="isi nominal yang ditransfer"
-                    android:textSize="12sp"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="170dp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -133,24 +177,24 @@
                     android:id="@+id/naba"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nama Bank         :"
-                    android:textSize="20sp"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:layout_marginTop="8dp"
-                    android:textColor="@android:color/black"/>
+                    android:text="Nama Bank         :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/naba2"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="167dp"
                     android:ems="10"
                     android:inputType="text"
                     android:text="nama Bank anda"
-                    android:textSize="12sp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="167dp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -162,27 +206,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Batas pembayaran:"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/bp2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="------"
-                    android:layout_marginStart="195dp"
                     android:layout_alignBottom="@+id/bp"
                     android:layout_alignParentStart="true"
-                    android:textColor="@android:color/black"/>
+                    android:layout_marginStart="195dp"
+                    android:text="------"
+                    android:textColor="@android:color/black" />
             </RelativeLayout>
 
             <TextView
                 android:id="@+id/garis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="-----------------------------"
-                android:textColor="@android:color/black"/>
+                android:text="-----------------------------------"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -192,22 +236,22 @@
                     android:id="@+id/logo1"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
                     android:layout_marginLeft="10dp"
-                    android:src="@drawable/bca" />
+                    android:src="@drawable/bca"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
 
                 <TextView
                     android:id="@+id/BT1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/BT2"
                     android:layout_marginTop="16dp"
                     android:text="060-044-2121"
                     android:textAllCaps="false"
-                    android:textSize="20sp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignStart="@+id/BT2"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/BT2"
@@ -218,10 +262,14 @@
                     android:layout_marginEnd="10dp"
                     android:text="atas nama: Ariyo"
                     android:textAllCaps="false"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
             </RelativeLayout>
-
+            <ImageView
+                android:id="@+id/imgUp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/ic_launcher_round"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -230,8 +278,8 @@
                     android:id="@+id/upload"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:text="uplouad"
-                   android:textColor="@android:color/black"/>
+                    android:text="upload"
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/konfir"
@@ -239,9 +287,11 @@
                     android:layout_height="50dp"
                     android:layout_marginLeft="200dp"
                     android:text="konfirmasi"
-                   android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/black" />
 
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+    </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+

@@ -1,20 +1,20 @@
 package mobile.skripsi.alloytravelexecutive.model;
 
 /**
- * Created by Apri on 7/22/2018.
+ * Created by Apri on 7/29/2018.
  */
 
-public class Tikeet3 {
+public class Tiket2 {
     private String nama;
     private String alamat;
     private String notelpn;
     private String keberangkatan;
     private String jumlah;
 
-    public Tikeet3() {
+    public Tiket2() {
     }
 
-    public Tikeet3(String nama, String alamat, String notelpn, String keberangkatan, String jumlah) {
+    public Tiket2(String nama, String alamat, String notelpn, String keberangkatan, String jumlah) {
         this.nama = nama;
         this.alamat = alamat;
         this.notelpn= notelpn;

@@ -1,18 +1,24 @@
 package mobile.skripsi.alloytravelexecutive;
 
-import android.os.Bundle;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TentangActivity extends AppCompatActivity {
+public class DetailPenumpangActivity extends AppCompatActivity {
+    private Button buttondatapenumpang1;
+    private Button buttondatapenumpang2;
+
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -20,7 +26,26 @@ public class TentangActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tentang);
+        setContentView(R.layout.activity_detail_penumpang);
+
+        buttondatapenumpang1 = (Button) findViewById(R.id.dp1);
+        buttondatapenumpang1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailPenumpangActivity.this, DetailPenumpang2Activity.class);
+                startActivity(intent);
+            }
+        });
+        //
+        buttondatapenumpang2 = (Button) findViewById(R.id.dp2);
+        buttondatapenumpang2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailPenumpangActivity.this, DetailPenumpang3Activity.class);
+                startActivity(intent);
+            }
+        });
+
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -34,11 +59,11 @@ public class TentangActivity extends AppCompatActivity {
     }
 
     private void setupViewPager(ViewPager viewPager) {
-        TentangActivity.ViewPagerAdapter adapter = new TentangActivity.ViewPagerAdapter(getSupportFragmentManager());
+        DetailPenumpangActivity.ViewPagerAdapter adapter = new DetailPenumpangActivity.ViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
     }
 
-    class ViewPagerAdapter extends FragmentPagerAdapter {
+    static class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
 

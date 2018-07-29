@@ -10,14 +10,17 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import mobile.skripsi.alloytravelexecutive.common.Constant;
 import mobile.skripsi.alloytravelexecutive.model.Tiket;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>{
     private ArrayList<Tiket> rvData;
+    private String kursi;
 
     private Context context;
-    public RecyclerViewAdapter(ArrayList<Tiket> inputData){
+    public RecyclerViewAdapter(ArrayList<Tiket> inputData, String kursi){
         rvData = inputData;
+        this.kursi = kursi;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
@@ -60,6 +63,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, PesanTiket2Activity.class);
+                intent.putExtra(Constant.KURSI,kursi);
                 context.startActivity(intent);
             }
         });

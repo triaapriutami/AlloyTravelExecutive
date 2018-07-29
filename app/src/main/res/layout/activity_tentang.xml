@@ -1,83 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mobile.skripsi.alloytravelexecutive.TentangActivity"
-    android:orientation="vertical"
-   android:background="@android:color/white">
+    tools:context="mobile.skripsi.alloytravelexecutive.DataPenumpangActivity"
+    android:orientation="vertical">
 
-    <ScrollView
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-            <TextView
-                android:id="@+id/sejarah1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="          PT Alloy Mitra Ersada, mulai beroperasi di Semarang, Jawa Tengah pada tanggal 1 Oktober 2014 dengan menjalankan bisnis awal di transportasi Taksi. Perusahaan menjalankan usaha taksi dengan Merk “Astria Taksi”. Jenis armada taksi adalah Toyota Apanza dan Honda Mobilio."
-                android:textAlignment="viewStart"
-                android:textSize="11sp"
-                android:typeface="serif"
-                android:textColor="@android:color/black"/>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"/>
+    </android.support.design.widget.AppBarLayout>
 
-            <TextView
-                android:id="@+id/sejarah2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="          Dengan melihat peluang bisnis, manajemen menjalankan bisni Shuttle, Travel dan Rental Bus Wisata. Bisnis ini dijalankan dengan merk Alloy Executive Shuttle dan Travel dan Alloy Holiday. Alloy Executive Shuttle dan Travel dan Alloy Holiday mulai beroperasi pada tanggal 1 Desember 2015, rute pertama dijalankan adalah rute Semarang-Jogyakarta PP, rute tersebut dilayani oleh 4 unit armada."
-                android:textAlignment="viewStart"
-                android:textSize="11sp"
-                android:typeface="serif"
-                android:textColor="@android:color/black"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
 
-            <TextView
-                android:id="@+id/sejarah3"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="110dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="          Dengan berjalanya waktu, manajemen menambah armada dan menambah rute, menjadi :
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sejarah1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          PT Alloy Mitra Ersada, mulai beroperasi di Semarang, Jawa Tengah pada tanggal 1 Oktober 2014 dengan menjalankan bisnis awal di transportasi Taksi. Perusahaan menjalankan usaha taksi dengan Merk “Astria Taksi”. Jenis armada taksi adalah Toyota Apanza dan Honda Mobilio."
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/sejarah2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          Dengan melihat peluang bisnis, manajemen menjalankan bisni Shuttle, Travel dan Rental Bus Wisata. Bisnis ini dijalankan dengan merk Alloy Executive Shuttle dan Travel dan Alloy Holiday. Alloy Executive Shuttle dan Travel dan Alloy Holiday mulai beroperasi pada tanggal 1 Desember 2015, rute pertama dijalankan adalah rute Semarang-Jogyakarta PP, rute tersebut dilayani oleh 4 unit armada."
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/sejarah3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          Dengan berjalanya waktu, manajemen menambah armada dan menambah rute, menjadi :
         1. Semarang – Jogyakarta PP
         2. Semarang – Jepara/Bangsri/Kelet PP
         3. Semarang – Solo PP
         4. Jogyakarta – Tegal PP"
-                android:textAlignment="viewStart"
-                android:textSize="11sp"
-                android:typeface="serif"
-                android:textColor="@android:color/black"/>
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    android:typeface="serif" />
 
-            <TextView
-                android:id="@+id/sejarah4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="          Rute rute tersebut dilayani oleh armada yang berkelas dengan kursi 'captain seat'. Jumlah tempat duduk (seat) sebanyak 11, 15 dan 17 untuk shuttle dan travel serta 35 seat untuk persewaan medium bus (Alloy Holiday)"
-                android:textAlignment="viewStart"
-                android:textSize="11sp"
-                android:typeface="serif"
-                android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/sejarah4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          Rute rute tersebut dilayani oleh armada yang berkelas dengan kursi 'captain seat'. Jumlah tempat duduk (seat) sebanyak 11, 15 dan 17 untuk shuttle dan travel serta 35 seat untuk persewaan medium bus (Alloy Holiday)"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    android:typeface="serif" />
 
-            <TextView
-                android:id="@+id/sejarah5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="          Pelayanan kepada masyarakat sangat diutamakan, manajemen memutuskan untuk memberikan tarif ekonomis kepada penumpang namun dilayani oleh armada yang berkelas. Penumpang juga diberikan discount atas penumpang member sehingga tarif untuk semua rute kami sangat terjangkau dan jauh lebih murah dari kompetitor."
-                android:textAlignment="viewStart"
-                android:textSize="11sp"
-                android:typeface="serif"
-                android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/sejarah5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          Pelayanan kepada masyarakat sangat diutamakan, manajemen memutuskan untuk memberikan tarif ekonomis kepada penumpang namun dilayani oleh armada yang berkelas. Penumpang juga diberikan discount atas penumpang member sehingga tarif untuk semua rute kami sangat terjangkau dan jauh lebih murah dari kompetitor."
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    android:typeface="serif" />
 
-            <TextView
-                android:id="@+id/sejarah6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="          Ditunjang oleh manajemen yang profesional dan sangat berpengalaman di transportasi, maka Alloy Executive Shuttle siap bersaing dengan kompetitor tanpa mengurangi pelayanan."
-                android:textSize="11sp"
-                android:typeface="serif"
-                android:textColor="@android:color/black"/>
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+                <TextView
+                    android:id="@+id/sejarah6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          Ditunjang oleh manajemen yang profesional dan sangat berpengalaman di transportasi, maka Alloy Executive Shuttle siap bersaing dengan kompetitor tanpa mengurangi pelayanan."
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -26,7 +26,6 @@ public class OneFragmentActivity extends Fragment{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
    @Override
@@ -49,12 +48,22 @@ public class OneFragmentActivity extends Fragment{
     }
 
     private void initDataSet() {
-        dataset.add(new Tikeet("nama","alamat","notelpn","keberangkatan","jumlah"));
 
-        dataset.add(new Tikeet("nama","alamat","notelpn","keberangkatan","jumlah"));
+        dataset.add(new Tikeet("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tikeet("nama","alamat","notelpn","keberangkatan","jumlah"));
-        
-        dataset.add(new Tikeet("nama","alamat","notelpn","keberangkatan","jumlah"));
+        dataset.add(new Tikeet("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
     }
 }

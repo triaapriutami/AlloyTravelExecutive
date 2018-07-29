@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="320dp"
-    tools:context="mobile.skripsi.alloytravelexecutive.TiketActivity"
-    android:orientation="vertical"
-    android:background="@android:color/white">
-
-    <TextView
-        android:id="@+id/judul1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Status Tiket"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"/>
+    android:layout_height="280dp"
+    tools:context="mobile.skripsi.alloytravelexecutive.DetailStatusTiketActivity"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -188,4 +178,4 @@
             android:layout_toEndOf="@+id/status" />
     </RelativeLayout>
 
-</LinearLayout >
+</LinearLayout>

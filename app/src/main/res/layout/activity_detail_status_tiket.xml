@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="mobile.skripsi.alloytravelexecutive.DetailStatusTiketActivity"
     android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="110dp">
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,6 +49,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/judul1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Status Tiket"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -178,7 +221,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:text="---------------------------"
+                    android:text="-----------------------------------"
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
             </RelativeLayout>
@@ -283,7 +326,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:text="---------------------------"
+                    android:text="-----------------------------------"
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
             </RelativeLayout>
@@ -298,23 +341,33 @@
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/dp1"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/dp1"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
                 android:text="data penumpang 1"
                 android:textColor="@android:color/black"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="11dp" />
 
             <Button
                 android:id="@+id/dp2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="200dp"
                 android:text="data penumpang 2"
                 android:textColor="@android:color/black"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:layout_marginEnd="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+            </RelativeLayout>
 
 
             <RelativeLayout
@@ -344,3 +397,4 @@
     </ScrollView>
 
 </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

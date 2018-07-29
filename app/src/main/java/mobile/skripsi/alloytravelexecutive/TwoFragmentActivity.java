@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import mobile.skripsi.alloytravelexecutive.model.Tikeet;
 import mobile.skripsi.alloytravelexecutive.model.Tikeet2;
 
 public class TwoFragmentActivity extends Fragment {
@@ -29,7 +28,7 @@ public class TwoFragmentActivity extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.activity_one_fragment, container, false);
+        View v = inflater.inflate(R.layout.activity_two_fragment, container, false);
         dataset = new ArrayList<>();
         initDataSet();
 
@@ -45,12 +44,21 @@ public class TwoFragmentActivity extends Fragment {
     }
 
     private void initDataSet() {
-        dataset.add(new Tikeet2("nama","alamat","notelpn","keberangkatan","jumlah"));
+        dataset.add(new Tikeet2("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tikeet2("nama","alamat","notelpn","keberangkatan","jumlah"));
+        dataset.add(new Tikeet2("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tikeet2("nama","alamat","notelpn","keberangkatan","jumlah"));
+        dataset.add(new Tikeet2("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tikeet2("nama","alamat","notelpn","keberangkatan","jumlah"));
+        dataset.add(new Tikeet2("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet2("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet2("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet2("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        dataset.add(new Tikeet2("tujuan:",".............","mobil:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
     }
 }

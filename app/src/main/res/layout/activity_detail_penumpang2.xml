@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mobile.skripsi.alloytravelexecutive.DataPenumpangActivity"
+    tools:context="mobile.skripsi.alloytravelexecutive.DetailPenumpang2Activity"
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="enterAlways"
+            app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <android.support.design.widget.TabLayout
@@ -29,12 +29,11 @@
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
 
-   <LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -50,13 +49,13 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/judul1"
+                android:id="@+id/detaipenumpang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Detail Tiket"
+                android:text="Detail Penumpang"
                 android:textAlignment="center"
-                android:textSize="20sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -187,6 +186,30 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/sts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="status"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/sts2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="........."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
@@ -194,11 +217,11 @@
                     android:id="@+id/batas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:text="--------------------------------"
+                    android:text="------------------------------------"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -210,39 +233,29 @@
                     android:id="@+id/informasi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Informasi kontak yang dapat dihubungin"
+                    android:text="Informasi Tiket Yang telah di booking"
                     android:textColor="@android:color/black" />
 
-                <TextView
-                    android:id="@+id/informasi2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/informasi"
-                    android:text="mohon mengisi data diri sesuai dengan nomor identitas, karena akan di tunjukan pada saat check-in"
-                    android:textColor="@android:color/black" />
 
                 <TextView
                     android:id="@+id/nama"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/editText2"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginBottom="10dp"
                     android:text="nama"
                     android:textColor="@android:color/black"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:layout_below="@+id/informasi"
+                    android:layout_alignParentStart="true" />
 
-                <EditText
-                    android:id="@+id/editText"
+                <TextView
+                    android:id="@+id/nama2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@+id/nama"
                     android:layout_alignBottom="@+id/nama"
                     android:layout_marginStart="11dp"
                     android:layout_toEndOf="@+id/tel"
-                    android:inputType="text"
-                    android:text="nama sesui dengan kartu identitas"
+                    android:text="........................"
                     android:textColor="@android:color/black"
                     android:textSize="10sp" />
 
@@ -250,24 +263,23 @@
                     android:id="@+id/tel"
                     android:layout_width="60dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginBottom="12dp"
                     android:text="no.telepon"
                     android:textColor="@android:color/black"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"
+                    android:layout_below="@+id/nama"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp" />
 
-                <EditText
-                    android:id="@+id/editText2"
+                <TextView
+                    android:id="@+id/tel2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text=".........................."
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
                     android:layout_alignBaseline="@+id/tel"
                     android:layout_alignBottom="@+id/tel"
-                    android:layout_alignStart="@+id/editText"
-                    android:inputType="number"
-                    android:text="no.telepon"
-                    android:textColor="@android:color/black"
-                    android:textSize="10sp" />
+                    android:layout_alignStart="@+id/nama2" />
 
             </RelativeLayout>
 
@@ -282,55 +294,12 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:text="--------------------------------"
+                    android:text="------------------------------------"
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
             </RelativeLayout>
-
-            <TextView
-                android:id="@+id/dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="Data Penumpang"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/dp1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="data penumpang 1"
-                android:textColor="@android:color/black"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/dp2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="data penumpang 2"
-                android:textColor="@android:color/black"
-                android:textSize="12sp" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <Button
-                    android:id="@+id/booking"
-                    android:layout_width="120dp"
-                    android:layout_height="60dp"
-                    android:text="booking"
-                    android:textColor="@android:color/black"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true" />
-
-                </RelativeLayout>
         </LinearLayout>
     </ScrollView>
-    </LinearLayout>
+</LinearLayout>
+
 </android.support.design.widget.CoordinatorLayout>

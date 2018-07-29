@@ -12,16 +12,17 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataPenumpang2Activity extends AppCompatActivity {
+public class DataPenumpang2Activity extends AppCompatActivity
+{
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_penumpang2);
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -35,7 +36,7 @@ public class DataPenumpang2Activity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         DataPenumpang2Activity.ViewPagerAdapter adapter = new DataPenumpang2Activity.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new OneFragmentActivity(), "Data Penumpang");
+        adapter.addFrag(new OneFragment(), "Data Penumang");
 
         viewPager.setAdapter(adapter);
     }
