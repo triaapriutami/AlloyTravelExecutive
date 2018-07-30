@@ -281,6 +281,28 @@
                         android:layout_alignBottom="@+id/tel"
                         android:layout_alignStart="@+id/nama2" />
 
+                    <TextView
+                        android:id="@+id/batas2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tel"
+                        android:layout_marginTop="40dp"
+                        android:text="------------------------------------"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:text="Data Penumpang"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -288,26 +310,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp">
 
-                    <TextView
-                        android:id="@+id/batas2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:text="------------------------------------"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp" />
                 </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Data Penumpang"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"

@@ -12,11 +12,11 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataPenumpang2Activity extends AppCompatActivity
-{
+public class DataPenumpang2Activity extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class DataPenumpang2Activity extends AppCompatActivity
 
     private void setupViewPager(ViewPager viewPager) {
         DataPenumpang2Activity.ViewPagerAdapter adapter = new DataPenumpang2Activity.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new OneFragment(), "Data Penumang");
+        adapter.addFrag(new OneFragment(), "DATA PENUMPANG");
 
         viewPager.setAdapter(adapter);
     }

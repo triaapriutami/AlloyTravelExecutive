@@ -281,23 +281,48 @@
                     android:layout_alignBottom="@+id/tel"
                     android:layout_alignStart="@+id/nama2" />
 
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
                 <TextView
-                    android:id="@+id/batas2"
-                    android:layout_width="match_parent"
+                    android:id="@+id/nokurs"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:text="------------------------------------"
+                    android:layout_below="@+id/tel"
+                    android:layout_marginTop="14dp"
+                    android:text="no.kursi"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/nokurs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nokurs"
+                    android:layout_alignBottom="@+id/nokurs"
+                    android:layout_alignStart="@+id/tel2"
+                    android:text=".........................."
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nokurs"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="29dp">
+
+                    <TextView
+                        android:id="@+id/batas2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="------------------------------------"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
             </RelativeLayout>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

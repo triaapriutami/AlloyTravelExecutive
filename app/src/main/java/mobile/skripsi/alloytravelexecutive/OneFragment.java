@@ -50,20 +50,21 @@ public class OneFragment extends Fragment {
 
     private void initDataSet() {
 
-        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
+            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
 
-        dataset.add(new Tiket2("nama", "alamat", "no.telpon", "keberangkatan", "jumlah"));
-    }
+            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+
+        }
 }

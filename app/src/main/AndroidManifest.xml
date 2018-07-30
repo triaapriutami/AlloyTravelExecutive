@@ -197,11 +197,26 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".DetailPenumpang2Activity" />
-        <activity android:name=".DetailPenumpang3Activity" />
-        <activity android:name=".DataPenumpang2Activity" />
-        <activity android:name=".OneFragment" />
-        <activity android:name=".DetailPenumpang4Activity"></activity>
+        <activity android:name=".DetailPenumpang2Activity"  android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".DetailPenumpang3Activity"  android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".DataPenumpang2Activity"  android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!--<activity android:name="OneFragment"/>-->
+        <activity android:name=".DetailPenumpang4Activity" android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
     </application>
 
 </manifest>

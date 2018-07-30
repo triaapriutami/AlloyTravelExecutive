@@ -31,7 +31,7 @@ public class IsiLoginActivity extends AppCompatActivity {
         buttondatapem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(IsiLoginActivity.this, DataPenumpang2Activity.class);
+                Intent intent = new Intent(IsiLoginActivity.this, DataPenumpangActivity.class);
                 startActivity(intent);
             }
         });
