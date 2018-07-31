@@ -5,123 +5,62 @@ package mobile.skripsi.alloytravelexecutive.model;
  */
 
 public class Tiket2 {
-//    private String nama;
-//    private String alamat;
-//    private String notelpn;
-//    private String keberangkatan;
-//    private String jumlah;
-//
-//    public Tiket2() {
-//    }
-//
-//    public Tiket2(String nama, String alamat, String notelpn, String keberangkatan, String jumlah) {
-//        this.nama = nama;
-//        this.alamat = alamat;
-//        this.notelpn= notelpn;
-//        this.keberangkatan = keberangkatan;
-//        this.jumlah= jumlah;
-//    }
-//
-//
-//    public String getNama() {return nama;}
-//    public void setNama(String nama) {this.nama = nama;}
-//
-//    public String getAlamat() {return alamat;}
-//    public void setAlamat(String alamat) {
-//        this.alamat= alamat;
-//    }
-//
-//    public String getNotelpn() {
-//        return notelpn;
-//    }
-//    public void setNotelpn(String notelpn) {
-//        this.notelpn = notelpn;
-//    }
-//
-//    public String getKeberangkatan() {return keberangkatan;}
-//    public void setKeberangkatan(String keberangkatan) {
-//        this.keberangkatan= keberangkatan;
-//    }
-//
-//    public String getJumlah() {return jumlah;}
-//    public void setJumlah(String jumlah) {this.jumlah = jumlah;}
-
-    private String nama1;
+    private String nama;
     private String nama2;
-    private String tujuan1;
-    private String tujuan2;
-    private String jenismobil1;
-    private String jenismobil2;
-    private String harga1;
-    private String harga2;
-    private String jam1;
-    private String jam2;
-    private String platmobil1;
-    private String platmobil2;
-    private String status1;
-    private String status2;
+    private String notelepon;
+    private String notelepon2;
+    private String kotaasal;
+    private String kotaasal2;
+    private String kotatujuan;
+    private String kotatujuan2;
+    private String pergi;
+    private String pergi2;
 
     public Tiket2() {
     }
 
-    public Tiket2(String nama1, String nama2, String tujuan1, String tujuan2, String jenismobil1, String jenismobil2,
-                  String harga1, String harga2, String jam1, String jam2, String platmobil1, String platmobil2, String status1, String status2) {
-        this.nama1 = nama1;
+    public Tiket2(String nama, String nama2,  String notelepon, String notelepon2,String kotaasal,
+                  String kotaasal2, String kotatujuan, String kotatujuan2, String pergi, String pergi2) {
+        this.nama = nama;
         this.nama2 = nama2;
-        this.tujuan1= tujuan1;
-        this.tujuan2 = tujuan2;
-        this.jenismobil1= jenismobil1;
-        this.jenismobil2 = jenismobil2;
-        this.harga1 = harga1;
-        this.harga2= harga2;
-        this.jam1 = jam1;
-        this.jam2= jam2;
-        this.platmobil1 = platmobil1;
-        this.platmobil2 = platmobil2;
-        this.status1 = status1;
-        this.status2 = status2;
+        this.notelepon= notelepon;
+        this.notelepon2 = notelepon2;
+        this.kotaasal= kotaasal;
+        this.kotaasal2 = kotaasal2;
+        this.kotatujuan = kotatujuan;
+        this.kotatujuan2= kotatujuan2;
+        this.pergi = pergi;
+        this.pergi2= pergi2;
     }
 
 
-    public String getNama1() {return nama1;}
-    public void setNama1(String nama1) {this.nama1 = nama1;}
+    public String getNama1() {return nama;}
+    public void setNama1(String nama) {this.nama = nama;}
 
     public String getNama2() {return nama2;}
     public void setNama2(String nama2) {this.nama2 = nama2;}
 
-    public String getTujuan1() {return tujuan1;}
-    public void setTujuan1(String tujuan1) {this.tujuan1 = tujuan1;}
+    public String getNoTelpon() {return notelepon;}
+    public void setNoTelpon(String notelepon) {this.notelepon = notelepon;}
 
-    public String getTujuan2() {return tujuan2;}
-    public void setTujuan2(String tujuan2) {this.tujuan2 = tujuan2;}
+    public String getNoTelpon2() {return notelepon2;}
+    public void setNoTelpon2(String notelepon2) {this.notelepon2 = notelepon2;}
 
-    public String getJenismobil1() {return jenismobil1;}
-    public void setJenismobil1(String jenismobil1) {this.jenismobil1 = jenismobil1;}
+    public String getKotasal1() {return kotaasal;}
+    public void setKotasal1(String kotaasal) {this.kotaasal = kotaasal;}
 
-    public String getJenismobil2() {return jenismobil2;}
-    public void setJenismobil2(String jenismobil2) {this.jenismobil2 = jenismobil2;}
+    public String getKotasal2() {return kotaasal2;}
+    public void getKotasal2(String kotaasal2) {this.kotaasal2 = kotaasal2;}
 
-    public String getHarga1() {return harga1;}
-    public void setHarga1(String harga1) {this.harga1= harga1;}
+    public String getKotaTujuan1() {return kotatujuan;}
+    public void getKotaTujuan1(String kotatujuan) {this.kotatujuan= kotatujuan;}
 
-    public String getHarga2() {return harga2;}
-    public void setHarga2(String harga2) {this.harga2 = harga2;}
+    public String getKotaTujuan2() {return kotatujuan2;}
+    public void getKotaTujuan2(String kotatujuan2) {this.kotatujuan2 = kotatujuan2;}
 
-    public String getJam1() {return jam1;}
-    public void setJam1(String jam1) {this.jam1= jam1;}
+    public String getPergi1() {return pergi;}
+    public void setPergi1(String pergi) {this.pergi= pergi;}
 
-    public String getJam2() {return jam2;}
-    public void setJam2(String jam2) {this.jam2 = jam2;}
-
-    public String getPlatmobil1() {return platmobil1;}
-    public void setPlatmobil1(String palatmobil1) {this.platmobil1= palatmobil1;}
-
-    public String getPlatmobil2() {return platmobil2;}
-    public void setPlatmobil2(String platmobil2) {this.platmobil2 = platmobil2;}
-
-    public String getStatus1() {return status1;}
-    public void setStatus1(String status1) {this.status1= status1;}
-
-    public String getStatus2() {return platmobil2;}
-    public void setStatus2(String status2) {this.status2 = status2;}
+    public String getPergii2() {return pergi2;}
+    public void setPergii2(String pergi2) {this.pergi2= pergi2;}
 }

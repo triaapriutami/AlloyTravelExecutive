@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="250dp"
     android:weightSum="1">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.10">
+        android:layout_weight="0.10"
+        android:layout_marginTop="5dp">
 
         <ImageView
             android:id="@+id/imageview1"
@@ -22,8 +23,8 @@
             android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/note"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="11dp"
+            android:layout_toStartOf="@+id/na2"
             android:text="NAMA:"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
@@ -33,9 +34,9 @@
             android:id="@+id/na2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/n1"
-            android:layout_alignBottom="@+id/n1"
-            android:layout_marginStart="20dp"
+            android:layout_alignBaseline="@+id/na1"
+            android:layout_alignBottom="@+id/na1"
+            android:layout_marginStart="31dp"
             android:layout_toEndOf="@+id/note"
             android:text="---------------"
             android:textColor="@android:color/black"
@@ -45,8 +46,9 @@
             android:id="@+id/note"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imageview1"
-            android:layout_marginStart="18dp"
+            android:layout_below="@+id/na1"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="20dp"
             android:layout_toEndOf="@+id/imageview1"
             android:text="No.Telpon:"
             android:textAllCaps="false"
@@ -102,35 +104,35 @@
             android:id="@+id/kotat2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="---------------"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
             android:layout_alignBaseline="@+id/kotat"
             android:layout_alignBottom="@+id/kotat"
-            android:layout_alignStart="@+id/perg2" />
+            android:layout_alignStart="@+id/perg2"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/perg"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/kotat"
+            android:layout_below="@+id/kotat"
+            android:layout_marginTop="14dp"
             android:text="Pergi:"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:layout_marginTop="14dp"
-            android:layout_below="@+id/kotat"
-            android:layout_alignStart="@+id/kotat" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/perg2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="---------------"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
             android:layout_alignBaseline="@+id/perg"
             android:layout_alignBottom="@+id/perg"
-            android:layout_alignStart="@+id/kotas2" />
+            android:layout_alignStart="@+id/kotas2"
+            android:text="---------------"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
     </RelativeLayout>
 
 </LinearLayout>

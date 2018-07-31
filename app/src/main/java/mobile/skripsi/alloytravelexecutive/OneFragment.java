@@ -50,21 +50,37 @@ public class OneFragment extends Fragment {
 
     private void initDataSet() {
 
-            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
 
-            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
 
-            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
 
-            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
 
-            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
 
-            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
 
-            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
 
-            dataset.add(new Tiket2("nama:",".............","tujuan:",".............","jenis mobil:",".............","jam:","...........","harga:","..........","plat:","...........","status:","..........."));
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
 
-        }
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
+
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
+
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
+
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
+
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
+
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
+
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
+
+            dataset.add(new Tiket2("nama:",".............","no.telpon:",".............","kota_asal:",".............","kota_tujuan:","...........","pergi:",".........."));
+
+    }
 }

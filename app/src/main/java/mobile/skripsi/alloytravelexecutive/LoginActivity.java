@@ -17,6 +17,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import mobile.skripsi.alloytravelexecutive.helper.SessionManager;
+
 public class LoginActivity extends AppCompatActivity {
     private Button buttonregistrasi;
     private  Button buttonlogin;
@@ -31,10 +33,17 @@ public class LoginActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
+    // Session Manager Class
+    SessionManager session;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        // Session Manager
+        session = new SessionManager(getApplicationContext());
+
         buttonregistrasi = (Button)findViewById(R.id.registrasi);
         buttonregistrasi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -143,6 +152,11 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Login Sukses", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this, IsiLogin2Activity.class);
             startActivity(intent);
+        }else if ((username.equals("user")) && ((password.equals("3456")))) {
+            Toast.makeText(this, "Login Sukses", Toast.LENGTH_SHORT).show();
+            session.createLoginSession("user");
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
         }
 
         else if ((username.matches("")||password.matches(""))){
@@ -157,4 +171,5 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
+
 }

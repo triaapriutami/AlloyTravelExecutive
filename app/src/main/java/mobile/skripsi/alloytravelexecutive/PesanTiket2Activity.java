@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mobile.skripsi.alloytravelexecutive.common.Constant;
+import mobile.skripsi.alloytravelexecutive.helper.SessionManager;
 
 public class PesanTiket2Activity extends AppCompatActivity {
 
@@ -30,10 +31,17 @@ public class PesanTiket2Activity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
+    // Session Manager Class
+    SessionManager session;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pesan_tiket2);
+
+        // Session Manager
+        session = new SessionManager(getApplicationContext());
+
         kursi = getIntent().getExtras().getString(Constant.KURSI);
         buttondp1 = (Button) findViewById(R.id.dp1);
         buttondp1.setOnClickListener(new View.OnClickListener() {
@@ -77,9 +85,17 @@ public class PesanTiket2Activity extends AppCompatActivity {
         buttonbooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PesanTiket2Activity.this, TiketActivity.class);
-                intent.putExtra(Constant.KURSI,kursi);
-                startActivity(intent);
+               if ( session.isLoggedIn()){
+                   Intent intent = new Intent(PesanTiket2Activity.this, TiketActivity.class);
+                   intent.putExtra(Constant.KURSI,kursi);
+
+                   startActivity(intent);
+               } else{
+                   Intent intent = new Intent(PesanTiket2Activity.this, LoginActivity.class);
+                    startActivity(intent);
+                   finish();
+               }
+
             }
         });
 
@@ -116,7 +132,6 @@ public class PesanTiket2Activity extends AppCompatActivity {
         public int getCount() {
             return mFragmentList.size();
         }
-
         public void addFrag(Fragment fragment, String title) {
             mFragmentList.add(fragment);
             mFragmentTitleList.add(title);
@@ -127,4 +142,6 @@ public class PesanTiket2Activity extends AppCompatActivity {
             return mFragmentTitleList.get(position);
         }
     }
+    
 }
+

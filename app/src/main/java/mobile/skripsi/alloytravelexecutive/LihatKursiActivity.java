@@ -48,7 +48,7 @@ public class LihatKursiActivity extends AppCompatActivity {
         buttonselesai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LihatKursiActivity.this, PesanTiketActivity.class);
+                Intent intent = new Intent(LihatKursiActivity.this, PesanTiket2Activity.class);
                 intent.putExtra(Constant.KURSI,getIntent().getExtras().getString(Constant.KURSI));
                 startActivity(intent);
             }
